@@ -1,0 +1,38 @@
+<html>
+<body>
+    <script>
+        var str = prompt("Enter string: ");
+        document.write("String is => ", str);
+        var i, Upper_cnt=0, Lower_cnt=0, Num_cnt=0, Vowels_cnt=0, Sp_cnt=0;
+        var character='';
+
+        for(i=0; i<str.length; i++){
+            character = str.charAt(i);
+            if (!isNaN(character * 1))
+                Num_cnt++;
+            else{
+                if (character == character.toUpperCase())
+                    Upper_cnt++;
+                if (character == character.toLowerCase())
+                    Lower_cnt++;
+            }
+
+            if("aeiouAEIOU".indexOf(str[i]) != -1)
+                    Vowels_cnt++;
+            
+            if(str[i] == " ")
+                Sp_cnt++;
+        }
+
+        if(Upper_cnt == str.length - Num_cnt)
+            document.write("<br>String is UpperCase");
+        else
+            document.write("<br>String is not UpperCase");
+        
+        document.write("<br>Number of Vowels => ", Vowels_cnt);
+        document.write("<br>Total characters with spaces => ", str.length);
+        document.write("<br>Total caracters without spaces => ", Upper_cnt+Lower_cnt);
+        document.write("<br>Number of spaces => ", Sp_cnt);
+    </script>
+</body>
+</html>

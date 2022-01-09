@@ -1,0 +1,22 @@
+<html>
+<body>
+    <script>
+        var age, name, i;
+        var letters = /^[A-Za-z ]+$/;
+        name = prompt("Enter your name:");
+        for(i=0; i<1; i++){
+            if(name.match(letters)){
+                age = prompt("Enter your age: ");
+                if(age >= 18)
+                    document.write(name, " you are logged in.");
+                else if(age < 18)
+                    document.write(name, " you are not authorized.");
+            }
+            else{
+                name = prompt("---Warning---\nEnter valid name:");
+                i--;
+            }
+        }
+    </script>
+</body>
+</html>
