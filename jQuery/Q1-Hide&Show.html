@@ -5,9 +5,14 @@
     $(document).ready(function(){
         $(".hide").click(function(){
             $("iframe").hide();
+            $(".hideP").hide();
+            $(".showP").show();
+            $('.showP').text("click on the Show button to appear hidden image.");
         });
         $(".show").click(function(){
             $("iframe").show();
+            $(".showP").hide();
+            $(".hideP").show();
         });
     });
 </script>
@@ -26,8 +31,9 @@ button{
 </style>
 <body>
     <h1>Web Page to hide and show an element on button click</h1>
-    <p>click on the "Hide" button to disappear below image.</p>
+    <p class="hideP">click on the "Hide" button to disappear below image.</p>
     <iframe src="https://giphy.com/embed/kTcJPBxUqZEAM" width="480" height="286" frameBorder="0"></iframe><br><br>
+    <p class="showP"></p>
     <button class="hide">Hide</button>
     <button class="show">Show</button>
 </body>
