@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('#div1').fadeIn();
+                $('#div2').fadeIn("slow");
+                $('#div3').fadeIn(2000);
+                $('#div4').fadeIn(4000);
+                $('#div5').fadeIn(5000);
+                $('#div6').fadeIn(6000);
+            });
+        });
+</script>
+</head>
+<style>
+button{
+    background-color: lightsalmon;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+#div1,#div2,#div3{
+    width: 80px;
+    height: 80px;
+    display: none;
+    background-color: tomato;
+}
+#div4,#div5,#div6{
+    float: left;
+    width: 80px;
+    height: 80px;
+    display: none;
+    background-color: tomato;
+}
+</style>
+<body>
+    <h2 style = "color:green;">fadeIn() with different parameters...</h2>
+    <button>Click to fade in boxes</button><br><br>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+    <div id="div6"></div>
+</body>
+</html>
