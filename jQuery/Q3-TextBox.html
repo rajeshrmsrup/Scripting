@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#getText').click(function(){
+				var inputString = $('#intext').val();
+				alert(inputString);
+			});
+		});
+	</script>
+</head>
+<style>
+button{
+    background-color: lightsalmon;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+</style>
+<body>
+	<h1 style="color:green">Enter text into the text box</h1>
+	<input type="text" id="intext" placeholder="Type here"><br><br>
+	<button type="button" id="getText">Display</button>
+</body>
+</html>
