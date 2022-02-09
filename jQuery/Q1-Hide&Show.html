@@ -1,21 +1,21 @@
 <html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $(".hide").click(function(){
-            $("iframe").hide();
-            $(".hideP").hide();
-            $(".showP").show();
-            $('.showP').text("click on the Show button to appear hidden image.");
+    <script>
+        $(document).ready(function(){
+            $(".hide").click(function(){
+                $("iframe").hide();
+                $(".hideP").hide();
+                $(".showP").show();
+                $('.showP').text("click on the Show button to appear hidden image.");
+            });
+            $(".show").click(function(){
+                $("iframe").show();
+                $(".showP").hide();
+                $(".hideP").show();
+            });
         });
-        $(".show").click(function(){
-            $("iframe").show();
-            $(".showP").hide();
-            $(".hideP").show();
-        });
-    });
-</script>
+    </script>
 </head>
 <style>
 button{
