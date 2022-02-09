@@ -1,0 +1,52 @@
+<html>
+<head>
+    <script type="text/javascript">
+        var c=0
+        var s
+        function photoGallery(){
+            if(c%4==0){
+                document.getElementById('photo-gallery').src = "Images/1.png";
+            }
+            if(c%4==1){
+                document.getElementById('photo-gallery').src = "Images/2.gif";
+            }
+            if(c%4==2){
+                document.getElementById('photo-gallery').src = "Images/3.gif";
+            }
+            if(c%4==3){
+                document.getElementById('photo-gallery').src = "Images/4.png";
+            }
+            c=c+1
+            s=setTimeout("photoGallery()",800)
+        }
+    </script>
+</head>
+<style>
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+div{
+    text-align: center;
+    padding-top: 100px;  
+}
+a{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+</style>
+<body onload="photoGallery()">
+    <table border="1">
+        <tr>
+        <td><img src="Images/1.png" id="photo-gallery" width="1000" height="200px"></td>
+        </tr>
+    </table>
+    <div><a href="Q5-Advertisement.html">Go to Main Page</a></div>
+</body>
+</html>
