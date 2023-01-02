@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+  Name: <input ng-model="name"><br><br>
+  Choose a car:
+  <select name="cars" id="cars" ng-model="car">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  Review of W3Schools:</p>
+  <textarea id="w3review" name="w3review" rows="4" cols="50" ng-model="text">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+  <h1>You entered: {{name}}</h1>  
+  <h1>You entered: {{car}}</h1>
+  <h1>You entered: {{text}}</h1>
+
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.name = "John Doe";
+});
+</script>
+
+<p>Change the inside inside the input field, and you will see the name in the header changes accordingly.</p>
+
+</body>
+</html>

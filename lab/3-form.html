@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Contact Information</title>
+</head>
+<body>
+  <form action="#" oninput="fgValue.value=feelgood.value">
+    <table>
+      <tr>
+        <td width="120"><label for="fname">First Name: </label></td>
+        <td width="400"><input id="fname" required type="text" name="firstName" placeholder="First Name" size="20" maxlength="30" /></td>
+      </tr>
+      <tr>
+        <td><label for="lname">Last Name: </label></td>
+        <td><input id="lname" required type="text" name="lastName" placeholder="Last Name" size="30" maxlength="50" /></td>
+      </tr>
+      <tr>
+        <td><label for="address1">Address #1: </label></td>
+        <td><input id="address1" type="text" name="lastName" placeholder="Address" size="50" maxlength="50" /></td>
+      </tr>
+      <tr>
+        <td><label for="address2">Address #2: </label></td>
+        <td><input id="address2" type="text" name="lastName" placeholder="Additional Address" size="50" maxlength="50" /></td>
+      </tr>
+      <tr>
+        <td><label for="city">City: </label></td>
+        <td>
+          <input id="city" type="text" name="city" placeholder="City" size="20" maxlength="40" />
+          
+        </td>
+      </tr>
+      <tr>
+        <td><label for="state">State: </label></td>
+        <td><input id="state" type="text" name="city" list="stateList" placeholder="State"/>
+          <datalist id="stateList">
+            <option value="Connecticut"/>
+            <option value="Delaware"/>
+            <option value="Maine"/>
+            <option value="Maryland"/>
+            <option value="Massachusetts"/>
+            <option value="New Hamshire"/>
+            <option value="New Jersey"/>
+            <option value="New York"/>
+            <option value="Pennsylvania"/>
+            <option value="Rhode Island"/>
+            <option value="Vermont"/>
+          </datalist></td>
+      </tr>
+      <tr>
+        <td><label for="zipcode">Zip Code: </label></td>
+        <td><input type="text" required id="zipcode" pattern="d{5}(-d{4})" placeholder="99999-9999" title="The zip code must have only 9 digits in the format 99999-9999..."/></td>
+      </tr>
+      <tr>
+        <td><label for="birthdate">Birthdate: </label></td>
+        <td><input id="birthdate" type="date" min="1970-01-01" /> (min date: Jan-01-1970)</td>
+      </tr>
+      <tr>
+        <td><label for="children">Children: </label></td>
+        <td><input type="number" min="0" max="20" value="0" step="1" /> (range: 0 ~ 20)</td>
+      </tr>
+      <tr>
+        <td><label for="feelgood">Feel Good Range: </label></td>
+        <td><input type="range" name="feelgood" step="10" value="50" />
+        <output name="fgValue" for="range">50</output></td>
+      </tr>
+      <tr>
+        <td><label for="favcolor">Favorite Color: </label></td>
+        <td><input type="color" name="favcolor" /></td>
+      </tr>
+    </table>
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE>
+<html> 
+<body> 
+  <form name="mylogin" action="validatepassword.php" method="post" id="mylogin"> 
+    <table align="center" border="0" cellpadding="4" cellspacing="4"> 
+      <tr align="center" valign="top"> 
+        <td> 
+          <p align="center"><font size="5">Novell Services Login
+             </font></p> 
+          <table align="center" border="0"> 
+ 
+            <tr align="left"> 
+              <td>Username:</td> 
+              <td><input type="text" name="username" size="30"></td> 
+            </tr> 
+ 
+            <tr align="left"> 
+              <td>Password:</td> 
+              <td><input type="password" name="password" size="30">
+              </td> 
+            </tr> 
+ 
+            <tr align="left"> 
+              <td>City of<br>Employment:</td> 
+              <td><input type="text" name="city" size="30"></td> 
+            </tr> 
+ 
+            <tr align="left"> 
+              <td>Web server:</td> 
+              <td> 
+                <select name="webserv" size="1"> 
+                  <option value="default" selected> 
+                    --- Choose a server --- 
+                  </option> 
+                  <option value="Human Resources"> 
+                    Human Resources 
+                  </option> 
+                  <option value="Development"> 
+                    Development 
+                  </option> 
+                  <option value="Accounting"> 
+                    Accounting 
+                  </option> 
+                  <option value="Sales"> 
+                    Sales 
+                  </option> 
+                </select> 
+              </td> 
+            </tr> 
+ 
+            <tr> 
+              <td colspan="2" align="left" height="25" valign="top"> 
+                <p></p> 
+              </td> 
+            </tr> 
+ 
+            <tr align="left"> 
+              <td>Please specify<br>your role:</td> 
+              <td> 
+                 <input name="role" value="admin" type="radio">
+                        Admin<br> 
+                 <input name="role" value="engineer" type="radio">
+                       Engineer<br> 
+                 <input name="role" value="manager" type="radio">
+                       Manager<br> 
+                 <input name="role" value="guest" type="radio">Guest 
+              </td> 
+            </tr> 
+ 
+            <tr> 
+              <td colspan="2" align="left" height="25" valign="top"
+                  width="121"> 
+                <p></p> 
+              </td> 
+            </tr> 
+ 
+            <tr align="left"> 
+              <td>Single Sign-on<br>to the following:</td> 
+              <td> 
+                <input name="mail" type="checkbox">Mail<br> 
+                <input name="payroll" type="checkbox">Payroll<br> 
+                <input name="selfservice" type="checkbox">
+                             Self-service<br> 
+              </td> 
+            </tr> 
+          </table> 
+        </td> 
+      </tr> 
+ 
+      <tr> 
+        <td colspan="2" align="center"> 
+          <input value="Login" type="submit"> 
+          <input type="reset"> 
+        </td> 
+      </tr> 
+    </table> 
+
+    Date and Time : <input type = "datetime" name = "newinput" /><br>
+    Local Date and Time : <input type = "datetime-local" name = "newinput" /><br>
+    Date : <input type = "date" name = "newinput" /><br>
+    Month : <input type = "month" name = "newinput" /><br>
+    Week : <input type = "week" name = "newinput" /><br>
+    Time : <input type = "time" name = "newinput" /><br>
+    Select Number : <input type = "number" min = "0" max = "10" step "1" value = "5" name = "newinput" /><br>
+    Select Range : <input type = "range" min = "0" max = "10" step "1" value = "5" name = "newinput" /><br>
+    Enter email : <input type = "email" name = "newinput" /><br>
+    Enter URL : <input type = "url" name = "newinput" /><br>
+    
+  </form> 
+</body> 
+</html>

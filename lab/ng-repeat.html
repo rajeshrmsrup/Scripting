@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<script>
+    var myApp6 = angular.module("myModule6", []).controller("myApp6Controller", function($scope) {  
+        var countries = [{
+            name: "UK",  
+            cities: [{name: "UK City1"}, {name: "UK City2"}, {name: "UK City3"}]  
+        }, 
+        {name: "US",  
+            cities: [{name: "US City1"}, {name: "US City2"}, {name: "US City3"}]  
+        }, {name: "India",  
+            cities: [{name: "US City1"}, {name: "US City2"}, {name: "US City3"}]  
+        }];  
+        $scope.countries = countries;  
+    }) 
+</script>
+
+<div ng-app="myModule6" ng-controller="myApp6Controller">  
+    <div>  
+        <ul>  
+            <li ng-repeat="country in countries">  
+                {{country.name}}  
+                <ul>  
+                    <li ng-repeat="city in country.cities">  
+                        {{city.name}}  
+                    </li>  
+                </ul>  
+            </li>  
+        </ul>  
+    </div>  
+</div>
+
+</body>
+</html>
